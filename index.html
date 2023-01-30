@@ -1,17 +1,57 @@
-<h1>Lorem Ipsum</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<p> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
-</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+         a[href^="https://www.google.com"] {
+                color:green ;
+            }
+            a[href^="https://www.link-group.eu"] {
+                color: red ;
+            }
+            #second-div > p:nth-child(even) {
+                color: red;
+            }
+            #second-div > p:nth-child(odd) {
+                color: blue;
+            }
+            #first-div > p::after {
+                content: "-NEW";
+                color: yellow;
+                background-color:royalblue;
+            }
+    body > p:last-of-type:hover {
+        font-style: italic;
+    }
+    
 
-<ul> What is Lorem Ipsum?
 
-<li style = "color : red" ; > Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li> 
-<li style = "color: orange " ; > Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </li> 
+    </style>
+</head>
 
-<p> Where does it come from? </p>
-<li style = "color : blue " ; > Contrary to popular belief, 
-Lorem Ipsum is not simply random text. </li>
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+        </div>
+    </div>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+</body>
 
-<li style ="color : green " ; > It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
- </li>
+</html>
