@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .h1 {
+            font-family: sans-serif;
+
+        }
+
+        .container {
+            max-width: 960px;
+            width: 90%;
+            margin: 0px auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 20px;
+        }
+
+        .box {
+            height: 175px;
+            width: 200px;
+            background: #A7C7E7;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .imagetitle {
+            height: 25px;
+            text-align: center;
+            background-color: white;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border: 1.5px solid #A7C7E7;
+        }
+        .lorem {
+            margin: 50px;
+            text-align: center;
+            
+        }
+        @media screen and (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">Gallery Heading</h1>
+    <div class="container">
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+        <p class="imagetitle">Image title</p>
+    </div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+        <div class="box"><img src="placeholder-image.png" style="width: 100%;">
+            <p class="imagetitle">Image title</p></div>
+    </div>
+    <div>
+        <p class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</body>
+
+</html>
